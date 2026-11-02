@@ -1,0 +1,42 @@
+# Job hunt search config
+# Edit keywords/location to taste. One search is run per keyword.
+
+keywords:
+  - "web developer"
+  - "frontend developer"
+  - "javascript developer"
+  - "full stack developer"
+  - "back end developer"
+  # Dev CV
+  - "backend developer"
+  - "software developer"
+  - "python developer"
+  - "php developer"
+  - "node.js developer"
+  - "integration developer"
+  # CySec CV
+  - "penetration tester"
+  - "cyber security analyst"
+  - "application security engineer"
+  # CRM CV
+  - "crm consultant"
+  - "crm developer"
+  - "automation specialist"
+
+locations:               # Adzuna 'where' / Reed 'locationName' — one search per location per keyword
+  - "London"
+  - "Cardiff"
+  - "Bristol"
+remote_ok: true          # also include remote-tagged results
+distance_miles: 25       # radius around each location above
+
+salary_min: 0             # set to e.g. 35000 to filter low-ball postings
+
+# Simple keyword blocklist — postings containing these words in the title
+# are dropped even if they matched a search keyword (tune as you go)
+exclude_title_contains:
+  - "senior director"
+  - "unpaid"
+  - "intern"
+
+results_per_source: 50    # per keyword, per source, per run

@@ -1,0 +1,8 @@
+[Unit]
+Description=Daily job hunt fetch
+
+[Service]
+Type=oneshot
+WorkingDirectory=%h/Projects/JobHunter
+EnvironmentFile=%h/Projects/JobHunter/.env
+ExecStart=/usr/bin/python3 %h/Projects/JobHunter/fetch_jobs.py

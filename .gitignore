@@ -1,0 +1,8 @@
+.env
+jobs.db
+jobs.db.*
+digests/
+__pycache__/
+.claude/settings.local.json
+*.docx
+*.pdf
